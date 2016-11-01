@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="project.udacity.apurv.com.portfolioapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/background_image"
+    android:isScrollContainer="true">
+
+
+    <TextView
+        android:text="@string/my_nano_degree_apps"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:typeface = "serif"
+        android:textColor="@color/colorMainLabel"
+        android:layout_width="@dimen/layout_width"
+        android:layout_marginTop="32dp"
+        android:id="@+id/mainText"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/popularMovies"
+        android:layout_alignStart="@+id/popularMovies"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popular_movies"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/rounded_buttons"
+        android:id="@+id/popularMovies"
+        android:layout_below="@id/mainText"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stock_hawk"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/rounded_buttons"
+        android:id="@+id/stockHawk"
+        android:layout_below="@id/popularMovies"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_it_bigger"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/rounded_buttons"
+        android:id="@+id/buildItBigger"
+        android:layout_below="@id/stockHawk"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_your_app_material"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/rounded_buttons"
+        android:id="@+id/makeYourAppMaterial"
+        android:layout_below="@id/buildItBigger"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="onButtonClick"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_ubiquitous"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/rounded_buttons"
+        android:id="@+id/goUbiquitous"
+        android:layout_below="@id/makeYourAppMaterial"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone"
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"
+        android:background="@drawable/capstone_button"
+        android:id="@+id/capstoneProject"
+        android:layout_below="@id/goUbiquitous"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
+        android:onClick="onButtonClick"/>
+
+</RelativeLayout>
